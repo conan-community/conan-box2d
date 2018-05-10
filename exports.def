@@ -1,0 +1,487 @@
+EXPORTS 
+	??_R0?AVb2ChainAndCircleContact@@@8 	 DATA
+	??_R0?AVb2ChainAndPolygonContact@@@8 	 DATA
+	??_R0?AVb2ChainShape@@@8 	 DATA
+	??_R0?AVb2CircleContact@@@8 	 DATA
+	??_R0?AVb2CircleShape@@@8 	 DATA
+	??_R0?AVb2Contact@@@8 	 DATA
+	??_R0?AVb2ContactFilter@@@8 	 DATA
+	??_R0?AVb2ContactListener@@@8 	 DATA
+	??_R0?AVb2DistanceJoint@@@8 	 DATA
+	??_R0?AVb2Draw@@@8 	 DATA
+	??_R0?AVb2EdgeAndCircleContact@@@8 	 DATA
+	??_R0?AVb2EdgeAndPolygonContact@@@8 	 DATA
+	??_R0?AVb2EdgeShape@@@8 	 DATA
+	??_R0?AVb2FrictionJoint@@@8 	 DATA
+	??_R0?AVb2GearJoint@@@8 	 DATA
+	??_R0?AVb2Joint@@@8 	 DATA
+	??_R0?AVb2MotorJoint@@@8 	 DATA
+	??_R0?AVb2MouseJoint@@@8 	 DATA
+	??_R0?AVb2PolygonAndCircleContact@@@8 	 DATA
+	??_R0?AVb2PolygonContact@@@8 	 DATA
+	??_R0?AVb2PolygonShape@@@8 	 DATA
+	??_R0?AVb2PrismaticJoint@@@8 	 DATA
+	??_R0?AVb2PulleyJoint@@@8 	 DATA
+	??_R0?AVb2RevoluteJoint@@@8 	 DATA
+	??_R0?AVb2RopeJoint@@@8 	 DATA
+	??_R0?AVb2Shape@@@8 	 DATA
+	??_R0?AVb2WeldJoint@@@8 	 DATA
+	??_R0?AVb2WheelJoint@@@8 	 DATA
+	?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 	 DATA
+	?b2Vec2_zero@@3Ub2Vec2@@B 	 DATA
+	?b2_defaultFilter@@3Vb2ContactFilter@@A 	 DATA
+	?b2_defaultListener@@3Vb2ContactListener@@A 	 DATA
+	?b2_gjkCalls@@3HA 	 DATA
+	?b2_gjkIters@@3HA 	 DATA
+	?b2_gjkMaxIters@@3HA 	 DATA
+	?b2_toiCalls@@3HA 	 DATA
+	?b2_toiIters@@3HA 	 DATA
+	?b2_toiMaxIters@@3HA 	 DATA
+	?b2_toiMaxRootIters@@3HA 	 DATA
+	?b2_toiMaxTime@@3MA 	 DATA
+	?b2_toiRootIters@@3HA 	 DATA
+	?b2_toiTime@@3MA 	 DATA
+	?b2_version@@3Ub2Version@@A 	 DATA
+	?g_blockSolve@@3_NA 	 DATA
+	?s_blockSizeLookup@b2BlockAllocator@@0PAEA 	 DATA
+	?s_blockSizeLookupInitialized@b2BlockAllocator@@0_NA 	 DATA
+	?s_blockSizes@b2BlockAllocator@@0PAHA 	 DATA
+	?s_initialized@b2Contact@@1_NA 	 DATA
+	?s_invFrequency@b2Timer@@0NA 	 DATA
+	?s_registers@b2Contact@@1PAY03Ub2ContactRegister@@A 	 DATA
+	??$Query@Ub2WorldQueryWrapper@@@b2BroadPhase@@QEBAXPEAUb2WorldQueryWrapper@@AEBUb2AABB@@@Z
+	??$Query@Ub2WorldQueryWrapper@@@b2DynamicTree@@QEBAXPEAUb2WorldQueryWrapper@@AEBUb2AABB@@@Z
+	??$Query@Vb2BroadPhase@@@b2DynamicTree@@QEBAXPEAVb2BroadPhase@@AEBUb2AABB@@@Z
+	??$RayCast@Ub2WorldRayCastWrapper@@@b2BroadPhase@@QEBAXPEAUb2WorldRayCastWrapper@@AEBUb2RayCastInput@@@Z
+	??$RayCast@Ub2WorldRayCastWrapper@@@b2DynamicTree@@QEBAXPEAUb2WorldRayCastWrapper@@AEBUb2RayCastInput@@@Z
+	??$UpdatePairs@Vb2ContactManager@@@b2BroadPhase@@QEAAXPEAVb2ContactManager@@@Z
+	??$_Med3_unchecked@PEAUb2Pair@@P6A_NAEBU1@0@Z@std@@YAXPEAUb2Pair@@00P6A_NAEBU1@1@Z@Z
+	??$_Partition_by_median_guess_unchecked@PEAUb2Pair@@P6A_NAEBU1@0@Z@std@@YA?AU?$pair@PEAUb2Pair@@PEAU1@@0@PEAUb2Pair@@0P6A_NAEBU2@1@Z@Z
+	??$_Pop_heap_hole_by_index@PEAUb2Pair@@U1@P6A_NAEBU1@0@Z@std@@YAXPEAUb2Pair@@_J1$$QEAU1@P6A_NAEBU1@3@Z@Z
+	??$_Sort_unchecked@PEAUb2Pair@@P6A_NAEBU1@0@Z@std@@YAXPEAUb2Pair@@0_JP6A_NAEBU1@2@Z@Z
+	??$__vcrt_va_start_verify_argument_type@PEBD@@YAXXZ
+	??0b2BlockAllocator@@QEAA@XZ
+	??0b2Body@@AEAA@PEBUb2BodyDef@@PEAVb2World@@@Z
+	??0b2BroadPhase@@QEAA@XZ
+	??0b2ChainAndCircleContact@@QEAA@PEAVb2Fixture@@H0H@Z
+	??0b2ChainAndPolygonContact@@QEAA@PEAVb2Fixture@@H0H@Z
+	??0b2CircleContact@@QEAA@PEAVb2Fixture@@0@Z
+	??0b2ClipVertex@@QEAA@XZ
+	??0b2Contact@@IEAA@PEAVb2Fixture@@H0H@Z
+	??0b2ContactManager@@QEAA@XZ
+	??0b2ContactSolver@@QEAA@PEAUb2ContactSolverDef@@@Z
+	??0b2DistanceJoint@@IEAA@PEBUb2DistanceJointDef@@@Z
+	??0b2Draw@@QEAA@XZ
+	??0b2DynamicTree@@QEAA@XZ
+	??0b2EdgeAndCircleContact@@QEAA@PEAVb2Fixture@@0@Z
+	??0b2EdgeAndPolygonContact@@QEAA@PEAVb2Fixture@@0@Z
+	??0b2Fixture@@IEAA@XZ
+	??0b2FrictionJoint@@IEAA@PEBUb2FrictionJointDef@@@Z
+	??0b2GearJoint@@IEAA@PEBUb2GearJointDef@@@Z
+	??0b2Island@@QEAA@HHHPEAVb2StackAllocator@@PEAVb2ContactListener@@@Z
+	??0b2Joint@@IEAA@PEBUb2JointDef@@@Z
+	??0b2ManifoldPoint@@QEAA@XZ
+	??0b2MotorJoint@@IEAA@PEBUb2MotorJointDef@@@Z
+	??0b2MouseJoint@@IEAA@PEBUb2MouseJointDef@@@Z
+	??0b2PolygonAndCircleContact@@QEAA@PEAVb2Fixture@@0@Z
+	??0b2PolygonContact@@QEAA@PEAVb2Fixture@@0@Z
+	??0b2PrismaticJoint@@IEAA@PEBUb2PrismaticJointDef@@@Z
+	??0b2PulleyJoint@@IEAA@PEBUb2PulleyJointDef@@@Z
+	??0b2RevoluteJoint@@IEAA@PEBUb2RevoluteJointDef@@@Z
+	??0b2Rope@@QEAA@XZ
+	??0b2RopeJoint@@IEAA@PEBUb2RopeJointDef@@@Z
+	??0b2StackAllocator@@QEAA@XZ
+	??0b2Timer@@QEAA@XZ
+	??0b2Vec2@@QEAA@XZ
+	??0b2WeldJoint@@IEAA@PEBUb2WeldJointDef@@@Z
+	??0b2WheelJoint@@IEAA@PEBUb2WheelJointDef@@@Z
+	??0b2World@@QEAA@AEBUb2Vec2@@@Z
+	??1?$b2GrowableStack@H$0BAA@@@QEAA@XZ
+	??1b2BlockAllocator@@QEAA@XZ
+	??1b2Body@@AEAA@XZ
+	??1b2BroadPhase@@QEAA@XZ
+	??1b2ChainShape@@UEAA@XZ
+	??1b2Contact@@MEAA@XZ
+	??1b2ContactFilter@@UEAA@XZ
+	??1b2ContactListener@@UEAA@XZ
+	??1b2ContactSolver@@QEAA@XZ
+	??1b2Draw@@UEAA@XZ
+	??1b2DynamicTree@@QEAA@XZ
+	??1b2EdgeShape@@UEAA@XZ
+	??1b2Island@@QEAA@XZ
+	??1b2Joint@@MEAA@XZ
+	??1b2Rope@@QEAA@XZ
+	??1b2Shape@@UEAA@XZ
+	??1b2StackAllocator@@QEAA@XZ
+	??1b2World@@QEAA@XZ
+	??3@YAXPEAX0@Z
+	??_H@YAXPEAX_K1P6APEAX0@Z@Z
+	?AddPair@b2ContactManager@@QEAAXPEAX0@Z
+	?AddType@b2Contact@@KAXP6APEAV1@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@ZP6AXPEAV1@1@ZW4Type@b2Shape@@5@Z
+	?Allocate@b2BlockAllocator@@QEAAPEAXH@Z
+	?Allocate@b2StackAllocator@@QEAAPEAXH@Z
+	?AllocateNode@b2DynamicTree@@AEAAHXZ
+	?AppendFlags@b2Draw@@QEAAXI@Z
+	?Balance@b2DynamicTree@@AEAAHH@Z
+	?BeginContact@b2ContactListener@@UEAAXPEAVb2Contact@@@Z
+	?BufferMove@b2BroadPhase@@AEAAXH@Z
+	?Clear@b2BlockAllocator@@QEAAXXZ
+	?Clear@b2ChainShape@@QEAAXXZ
+	?ClearFlags@b2Draw@@QEAAXI@Z
+	?ClearForces@b2World@@QEAAXXZ
+	?Clone@b2ChainShape@@UEBAPEAVb2Shape@@PEAVb2BlockAllocator@@@Z
+	?Clone@b2CircleShape@@UEBAPEAVb2Shape@@PEAVb2BlockAllocator@@@Z
+	?Clone@b2EdgeShape@@UEBAPEAVb2Shape@@PEAVb2BlockAllocator@@@Z
+	?Clone@b2PolygonShape@@UEBAPEAVb2Shape@@PEAVb2BlockAllocator@@@Z
+	?Collide@b2ContactManager@@QEAAXXZ
+	?Collide@b2EPCollider@@QEAAXPEAUb2Manifold@@PEBVb2EdgeShape@@AEBUb2Transform@@PEBVb2PolygonShape@@2@Z
+	?ComputeAABB@b2ChainShape@@UEBAXPEAUb2AABB@@AEBUb2Transform@@H@Z
+	?ComputeAABB@b2CircleShape@@UEBAXPEAUb2AABB@@AEBUb2Transform@@H@Z
+	?ComputeAABB@b2EdgeShape@@UEBAXPEAUb2AABB@@AEBUb2Transform@@H@Z
+	?ComputeAABB@b2PolygonShape@@UEBAXPEAUb2AABB@@AEBUb2Transform@@H@Z
+	?ComputeEdgeSeparation@b2EPCollider@@QEAA?AUb2EPAxis@@XZ
+	?ComputeHeight@b2DynamicTree@@AEBAHH@Z
+	?ComputeHeight@b2DynamicTree@@AEBAHXZ
+	?ComputeMass@b2ChainShape@@UEBAXPEAUb2MassData@@M@Z
+	?ComputeMass@b2CircleShape@@UEBAXPEAUb2MassData@@M@Z
+	?ComputeMass@b2EdgeShape@@UEBAXPEAUb2MassData@@M@Z
+	?ComputeMass@b2PolygonShape@@UEBAXPEAUb2MassData@@M@Z
+	?ComputePolygonSeparation@b2EPCollider@@QEAA?AUb2EPAxis@@XZ
+	?Create@b2ChainAndCircleContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2ChainAndPolygonContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2CircleContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2Contact@@KAPEAV1@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2EdgeAndCircleContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2EdgeAndPolygonContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2Fixture@@IEAAXPEAVb2BlockAllocator@@PEAVb2Body@@PEBUb2FixtureDef@@@Z
+	?Create@b2Joint@@KAPEAV1@PEBUb2JointDef@@PEAVb2BlockAllocator@@@Z
+	?Create@b2PolygonAndCircleContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?Create@b2PolygonContact@@SAPEAVb2Contact@@PEAVb2Fixture@@H0HPEAVb2BlockAllocator@@@Z
+	?CreateBody@b2World@@QEAAPEAVb2Body@@PEBUb2BodyDef@@@Z
+	?CreateChain@b2ChainShape@@QEAAXPEBUb2Vec2@@H@Z
+	?CreateFixture@b2Body@@QEAAPEAVb2Fixture@@PEBUb2FixtureDef@@@Z
+	?CreateFixture@b2Body@@QEAAPEAVb2Fixture@@PEBVb2Shape@@M@Z
+	?CreateJoint@b2World@@QEAAPEAVb2Joint@@PEBUb2JointDef@@@Z
+	?CreateLoop@b2ChainShape@@QEAAXPEBUb2Vec2@@H@Z
+	?CreateProxies@b2Fixture@@IEAAXPEAVb2BroadPhase@@AEBUb2Transform@@@Z
+	?CreateProxy@b2BroadPhase@@QEAAHAEBUb2AABB@@PEAX@Z
+	?CreateProxy@b2DynamicTree@@QEAAHAEBUb2AABB@@PEAX@Z
+	?Destroy@b2ChainAndCircleContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2ChainAndPolygonContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2CircleContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2Contact@@KAXPEAV1@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2ContactManager@@QEAAXPEAVb2Contact@@@Z
+	?Destroy@b2EdgeAndCircleContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2EdgeAndPolygonContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2Fixture@@IEAAXPEAVb2BlockAllocator@@@Z
+	?Destroy@b2Joint@@KAXPEAV1@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2PolygonAndCircleContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?Destroy@b2PolygonContact@@SAXPEAVb2Contact@@PEAVb2BlockAllocator@@@Z
+	?DestroyBody@b2World@@QEAAXPEAVb2Body@@@Z
+	?DestroyFixture@b2Body@@QEAAXPEAVb2Fixture@@@Z
+	?DestroyJoint@b2World@@QEAAXPEAVb2Joint@@@Z
+	?DestroyProxies@b2Fixture@@IEAAXPEAVb2BroadPhase@@@Z
+	?DestroyProxy@b2BroadPhase@@QEAAXH@Z
+	?DestroyProxy@b2DynamicTree@@QEAAXH@Z
+	?Draw@b2Rope@@QEBAXPEAVb2Draw@@@Z
+	?DrawDebugData@b2World@@QEAAXXZ
+	?DrawJoint@b2World@@AEAAXPEAVb2Joint@@@Z
+	?DrawShape@b2World@@AEAAXPEAVb2Fixture@@AEBUb2Transform@@AEBUb2Color@@@Z
+	?Dump@b2Body@@QEAAXXZ
+	?Dump@b2DistanceJoint@@UEAAXXZ
+	?Dump@b2Fixture@@QEAAXH@Z
+	?Dump@b2FrictionJoint@@UEAAXXZ
+	?Dump@b2GearJoint@@UEAAXXZ
+	?Dump@b2Joint@@UEAAXXZ
+	?Dump@b2MotorJoint@@UEAAXXZ
+	?Dump@b2MouseJoint@@UEAAXXZ
+	?Dump@b2PrismaticJoint@@UEAAXXZ
+	?Dump@b2PulleyJoint@@UEAAXXZ
+	?Dump@b2RevoluteJoint@@UEAAXXZ
+	?Dump@b2RopeJoint@@UEAAXXZ
+	?Dump@b2WeldJoint@@UEAAXXZ
+	?Dump@b2WheelJoint@@UEAAXXZ
+	?Dump@b2World@@QEAAXXZ
+	?EnableLimit@b2PrismaticJoint@@QEAAX_N@Z
+	?EnableLimit@b2RevoluteJoint@@QEAAX_N@Z
+	?EnableMotor@b2PrismaticJoint@@QEAAX_N@Z
+	?EnableMotor@b2RevoluteJoint@@QEAAX_N@Z
+	?EnableMotor@b2WheelJoint@@QEAAX_N@Z
+	?EndContact@b2ContactListener@@UEAAXPEAVb2Contact@@@Z
+	?Evaluate@b2ChainAndCircleContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2ChainAndPolygonContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2CircleContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2EdgeAndCircleContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2EdgeAndPolygonContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2PolygonAndCircleContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2PolygonContact@@UEAAXPEAUb2Manifold@@AEBUb2Transform@@1@Z
+	?Evaluate@b2SeparationFunction@@QEBAMHHM@Z
+	?FindMinSeparation@b2SeparationFunction@@QEBAMPEAH0M@Z
+	?FindNewContacts@b2ContactManager@@QEAAXXZ
+	?Free@b2BlockAllocator@@QEAAXPEAXH@Z
+	?Free@b2StackAllocator@@QEAAXPEAX@Z
+	?FreeNode@b2DynamicTree@@AEAAXH@Z
+	?GetAnchorA@b2DistanceJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2FrictionJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2GearJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2MotorJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2MouseJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2PrismaticJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2PulleyJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2RevoluteJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2RopeJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2WeldJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorA@b2WheelJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2DistanceJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2FrictionJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2GearJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2MotorJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2MouseJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2PrismaticJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2PulleyJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2RevoluteJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2RopeJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2WeldJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAnchorB@b2WheelJoint@@UEBA?AUb2Vec2@@XZ
+	?GetAngularOffset@b2MotorJoint@@QEBAMXZ
+	?GetAreaRatio@b2DynamicTree@@QEBAMXZ
+	?GetChildCount@b2ChainShape@@UEBAHXZ
+	?GetChildCount@b2CircleShape@@UEBAHXZ
+	?GetChildCount@b2EdgeShape@@UEBAHXZ
+	?GetChildCount@b2PolygonShape@@UEBAHXZ
+	?GetChildEdge@b2ChainShape@@QEBAXPEAVb2EdgeShape@@H@Z
+	?GetCorrectionFactor@b2MotorJoint@@QEBAMXZ
+	?GetCurrentLengthA@b2PulleyJoint@@QEBAMXZ
+	?GetCurrentLengthB@b2PulleyJoint@@QEBAMXZ
+	?GetDampingRatio@b2MouseJoint@@QEBAMXZ
+	?GetFlags@b2Draw@@QEBAIXZ
+	?GetFrequency@b2MouseJoint@@QEBAMXZ
+	?GetGroundAnchorA@b2PulleyJoint@@QEBA?AUb2Vec2@@XZ
+	?GetGroundAnchorB@b2PulleyJoint@@QEBA?AUb2Vec2@@XZ
+	?GetHeight@b2DynamicTree@@QEBAHXZ
+	?GetInverse22@b2Mat33@@QEBAXPEAU1@@Z
+	?GetJointAngle@b2RevoluteJoint@@QEBAMXZ
+	?GetJointSpeed@b2PrismaticJoint@@QEBAMXZ
+	?GetJointSpeed@b2RevoluteJoint@@QEBAMXZ
+	?GetJointSpeed@b2WheelJoint@@QEBAMXZ
+	?GetJointTranslation@b2PrismaticJoint@@QEBAMXZ
+	?GetJointTranslation@b2WheelJoint@@QEBAMXZ
+	?GetLengthA@b2PulleyJoint@@QEBAMXZ
+	?GetLengthB@b2PulleyJoint@@QEBAMXZ
+	?GetLimitState@b2RopeJoint@@QEBA?AW4b2LimitState@@XZ
+	?GetLinearOffset@b2MotorJoint@@QEBAAEBUb2Vec2@@XZ
+	?GetLowerLimit@b2PrismaticJoint@@QEBAMXZ
+	?GetLowerLimit@b2RevoluteJoint@@QEBAMXZ
+	?GetMaxAllocation@b2StackAllocator@@QEBAHXZ
+	?GetMaxBalance@b2DynamicTree@@QEBAHXZ
+	?GetMaxForce@b2FrictionJoint@@QEBAMXZ
+	?GetMaxForce@b2MotorJoint@@QEBAMXZ
+	?GetMaxForce@b2MouseJoint@@QEBAMXZ
+	?GetMaxLength@b2RopeJoint@@QEBAMXZ
+	?GetMaxTorque@b2FrictionJoint@@QEBAMXZ
+	?GetMaxTorque@b2MotorJoint@@QEBAMXZ
+	?GetMetric@b2Simplex@@QEBAMXZ
+	?GetMilliseconds@b2Timer@@QEBAMXZ
+	?GetMotorForce@b2PrismaticJoint@@QEBAMM@Z
+	?GetMotorTorque@b2RevoluteJoint@@QEBAMM@Z
+	?GetMotorTorque@b2WheelJoint@@QEBAMM@Z
+	?GetProxyCount@b2World@@QEBAHXZ
+	?GetRatio@b2GearJoint@@QEBAMXZ
+	?GetRatio@b2PulleyJoint@@QEBAMXZ
+	?GetReactionForce@b2DistanceJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2FrictionJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2GearJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2MotorJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2MouseJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2PrismaticJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2PulleyJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2RevoluteJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2RopeJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2WeldJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionForce@b2WheelJoint@@UEBA?AUb2Vec2@@M@Z
+	?GetReactionTorque@b2DistanceJoint@@UEBAMM@Z
+	?GetReactionTorque@b2FrictionJoint@@UEBAMM@Z
+	?GetReactionTorque@b2GearJoint@@UEBAMM@Z
+	?GetReactionTorque@b2MotorJoint@@UEBAMM@Z
+	?GetReactionTorque@b2MouseJoint@@UEBAMM@Z
+	?GetReactionTorque@b2PrismaticJoint@@UEBAMM@Z
+	?GetReactionTorque@b2PulleyJoint@@UEBAMM@Z
+	?GetReactionTorque@b2RevoluteJoint@@UEBAMM@Z
+	?GetReactionTorque@b2RopeJoint@@UEBAMM@Z
+	?GetReactionTorque@b2WeldJoint@@UEBAMM@Z
+	?GetReactionTorque@b2WheelJoint@@UEBAMM@Z
+	?GetSupport@b2DistanceProxy@@QEBAHAEBUb2Vec2@@@Z
+	?GetSymInverse33@b2Mat33@@QEBAXPEAU1@@Z
+	?GetTarget@b2MouseJoint@@QEBAAEBUb2Vec2@@XZ
+	?GetTreeBalance@b2World@@QEBAHXZ
+	?GetTreeHeight@b2World@@QEBAHXZ
+	?GetTreeQuality@b2World@@QEBAMXZ
+	?GetUpperLimit@b2PrismaticJoint@@QEBAMXZ
+	?GetUpperLimit@b2RevoluteJoint@@QEBAMXZ
+	?InitVelocityConstraints@b2DistanceJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2FrictionJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2GearJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2MotorJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2MouseJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2PrismaticJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2PulleyJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2RevoluteJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2RopeJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2WeldJoint@@MEAAXAEBUb2SolverData@@@Z
+	?InitVelocityConstraints@b2WheelJoint@@MEAAXAEBUb2SolverData@@@Z
+	?Initialize@b2DistanceJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@1@Z
+	?Initialize@b2FrictionJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@@Z
+	?Initialize@b2MotorJointDef@@QEAAXPEAVb2Body@@0@Z
+	?Initialize@b2PositionSolverManifold@@QEAAXPEAUb2ContactPositionConstraint@@AEBUb2Transform@@1H@Z
+	?Initialize@b2PrismaticJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@1@Z
+	?Initialize@b2PulleyJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@111M@Z
+	?Initialize@b2RevoluteJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@@Z
+	?Initialize@b2Rope@@QEAAXPEBUb2RopeDef@@@Z
+	?Initialize@b2SeparationFunction@@QEAAMPEBUb2SimplexCache@@PEBUb2DistanceProxy@@AEBUb2Sweep@@12M@Z
+	?Initialize@b2WeldJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@@Z
+	?Initialize@b2WheelJointDef@@QEAAXPEAVb2Body@@0AEBUb2Vec2@@1@Z
+	?Initialize@b2WorldManifold@@QEAAXPEBUb2Manifold@@AEBUb2Transform@@M1M@Z
+	?InitializeRegisters@b2Contact@@KAXXZ
+	?InitializeVelocityConstraints@b2ContactSolver@@QEAAXXZ
+	?InsertLeaf@b2DynamicTree@@AEAAXH@Z
+	?IsActive@b2Joint@@QEBA_NXZ
+	?IsLimitEnabled@b2PrismaticJoint@@QEBA_NXZ
+	?IsLimitEnabled@b2RevoluteJoint@@QEBA_NXZ
+	?IsMotorEnabled@b2PrismaticJoint@@QEBA_NXZ
+	?IsMotorEnabled@b2RevoluteJoint@@QEBA_NXZ
+	?IsMotorEnabled@b2WheelJoint@@QEBA_NXZ
+	?MoveProxy@b2BroadPhase@@QEAAXHAEBUb2AABB@@AEBUb2Vec2@@@Z
+	?MoveProxy@b2DynamicTree@@QEAA_NHAEBUb2AABB@@AEBUb2Vec2@@@Z
+	?Normalize@b2Vec2@@QEAAMXZ
+	?PostSolve@b2ContactListener@@UEAAXPEAVb2Contact@@PEBUb2ContactImpulse@@@Z
+	?PreSolve@b2ContactListener@@UEAAXPEAVb2Contact@@PEBUb2Manifold@@@Z
+	?QueryAABB@b2World@@QEBAXPEAVb2QueryCallback@@AEBUb2AABB@@@Z
+	?QueryCallback@b2BroadPhase@@AEAA_NH@Z
+	?RayCast@b2AABB@@QEBA_NPEAUb2RayCastOutput@@AEBUb2RayCastInput@@@Z
+	?RayCast@b2ChainShape@@UEBA_NPEAUb2RayCastOutput@@AEBUb2RayCastInput@@AEBUb2Transform@@H@Z
+	?RayCast@b2CircleShape@@UEBA_NPEAUb2RayCastOutput@@AEBUb2RayCastInput@@AEBUb2Transform@@H@Z
+	?RayCast@b2EdgeShape@@UEBA_NPEAUb2RayCastOutput@@AEBUb2RayCastInput@@AEBUb2Transform@@H@Z
+	?RayCast@b2PolygonShape@@UEBA_NPEAUb2RayCastOutput@@AEBUb2RayCastInput@@AEBUb2Transform@@H@Z
+	?RayCast@b2World@@QEBAXPEAVb2RayCastCallback@@AEBUb2Vec2@@1@Z
+	?ReadCache@b2Simplex@@QEAAXPEBUb2SimplexCache@@PEBUb2DistanceProxy@@AEBUb2Transform@@12@Z
+	?RebuildBottomUp@b2DynamicTree@@QEAAXXZ
+	?Refilter@b2Fixture@@QEAAXXZ
+	?RemoveLeaf@b2DynamicTree@@AEAAXH@Z
+	?Report@b2Island@@QEAAXPEBUb2ContactVelocityConstraint@@@Z
+	?Reset@b2Timer@@QEAAXXZ
+	?ResetMassData@b2Body@@QEAAXXZ
+	?Set@b2DistanceProxy@@QEAAXPEBVb2Shape@@H@Z
+	?Set@b2EdgeShape@@QEAAXAEBUb2Vec2@@0@Z
+	?Set@b2PolygonShape@@QEAAXPEBUb2Vec2@@H@Z
+	?SetActive@b2Body@@QEAAX_N@Z
+	?SetAllowSleeping@b2World@@QEAAX_N@Z
+	?SetAngle@b2Rope@@QEAAXM@Z
+	?SetAngularOffset@b2MotorJoint@@QEAAXM@Z
+	?SetAsBox@b2PolygonShape@@QEAAXMM@Z
+	?SetAsBox@b2PolygonShape@@QEAAXMMAEBUb2Vec2@@M@Z
+	?SetContactFilter@b2World@@QEAAXPEAVb2ContactFilter@@@Z
+	?SetContactListener@b2World@@QEAAXPEAVb2ContactListener@@@Z
+	?SetCorrectionFactor@b2MotorJoint@@QEAAXM@Z
+	?SetDampingRatio@b2MouseJoint@@QEAAXM@Z
+	?SetDebugDraw@b2World@@QEAAXPEAVb2Draw@@@Z
+	?SetDestructionListener@b2World@@QEAAXPEAVb2DestructionListener@@@Z
+	?SetFilterData@b2Fixture@@QEAAXAEBUb2Filter@@@Z
+	?SetFixedRotation@b2Body@@QEAAX_N@Z
+	?SetFlags@b2Draw@@QEAAXI@Z
+	?SetFrequency@b2MouseJoint@@QEAAXM@Z
+	?SetLimits@b2PrismaticJoint@@QEAAXMM@Z
+	?SetLimits@b2RevoluteJoint@@QEAAXMM@Z
+	?SetLinearOffset@b2MotorJoint@@QEAAXAEBUb2Vec2@@@Z
+	?SetMassData@b2Body@@QEAAXPEBUb2MassData@@@Z
+	?SetMaxForce@b2FrictionJoint@@QEAAXM@Z
+	?SetMaxForce@b2MotorJoint@@QEAAXM@Z
+	?SetMaxForce@b2MouseJoint@@QEAAXM@Z
+	?SetMaxMotorForce@b2PrismaticJoint@@QEAAXM@Z
+	?SetMaxMotorTorque@b2RevoluteJoint@@QEAAXM@Z
+	?SetMaxMotorTorque@b2WheelJoint@@QEAAXM@Z
+	?SetMaxTorque@b2FrictionJoint@@QEAAXM@Z
+	?SetMaxTorque@b2MotorJoint@@QEAAXM@Z
+	?SetMotorSpeed@b2PrismaticJoint@@QEAAXM@Z
+	?SetMotorSpeed@b2RevoluteJoint@@QEAAXM@Z
+	?SetMotorSpeed@b2WheelJoint@@QEAAXM@Z
+	?SetNextVertex@b2ChainShape@@QEAAXAEBUb2Vec2@@@Z
+	?SetPrevVertex@b2ChainShape@@QEAAXAEBUb2Vec2@@@Z
+	?SetRatio@b2GearJoint@@QEAAXM@Z
+	?SetSensor@b2Fixture@@QEAAX_N@Z
+	?SetTarget@b2MouseJoint@@QEAAXAEBUb2Vec2@@@Z
+	?SetTransform@b2Body@@QEAAXAEBUb2Vec2@@M@Z
+	?SetType@b2Body@@QEAAXW4b2BodyType@@@Z
+	?ShiftOrigin@b2DynamicTree@@QEAAXAEBUb2Vec2@@@Z
+	?ShiftOrigin@b2Joint@@UEAAXAEBUb2Vec2@@@Z
+	?ShiftOrigin@b2MouseJoint@@UEAAXAEBUb2Vec2@@@Z
+	?ShiftOrigin@b2PulleyJoint@@UEAAXAEBUb2Vec2@@@Z
+	?ShiftOrigin@b2World@@QEAAXAEBUb2Vec2@@@Z
+	?ShouldCollide@b2Body@@AEBA_NPEBV1@@Z
+	?ShouldCollide@b2ContactFilter@@UEAA_NPEAVb2Fixture@@0@Z
+	?Solve22@b2Mat33@@QEBA?AUb2Vec2@@AEBU2@@Z
+	?Solve2@b2Simplex@@QEAAXXZ
+	?Solve33@b2Mat33@@QEBA?AUb2Vec3@@AEBU2@@Z
+	?Solve3@b2Simplex@@QEAAXXZ
+	?Solve@b2Island@@QEAAXPEAUb2Profile@@AEBUb2TimeStep@@AEBUb2Vec2@@_N@Z
+	?Solve@b2World@@AEAAXAEBUb2TimeStep@@@Z
+	?SolveC2@b2Rope@@AEAAXXZ
+	?SolveC3@b2Rope@@AEAAXXZ
+	?SolvePositionConstraints@b2ContactSolver@@QEAA_NXZ
+	?SolvePositionConstraints@b2DistanceJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2FrictionJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2GearJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2MotorJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2MouseJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2PrismaticJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2PulleyJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2RevoluteJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2RopeJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2WeldJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolvePositionConstraints@b2WheelJoint@@MEAA_NAEBUb2SolverData@@@Z
+	?SolveTOI@b2Island@@QEAAXAEBUb2TimeStep@@HH@Z
+	?SolveTOI@b2World@@AEAAXAEBUb2TimeStep@@@Z
+	?SolveTOIPositionConstraints@b2ContactSolver@@QEAA_NHH@Z
+	?SolveVelocityConstraints@b2ContactSolver@@QEAAXXZ
+	?SolveVelocityConstraints@b2DistanceJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2FrictionJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2GearJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2MotorJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2MouseJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2PrismaticJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2PulleyJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2RevoluteJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2RopeJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2WeldJoint@@MEAAXAEBUb2SolverData@@@Z
+	?SolveVelocityConstraints@b2WheelJoint@@MEAAXAEBUb2SolverData@@@Z
+	?Step@b2Rope@@QEAAXMH@Z
+	?Step@b2World@@QEAAXMHH@Z
+	?StoreImpulses@b2ContactSolver@@QEAAXXZ
+	?Synchronize@b2Fixture@@IEAAXPEAVb2BroadPhase@@AEBUb2Transform@@1@Z
+	?SynchronizeFixtures@b2Body@@AEAAXXZ
+	?TestPoint@b2ChainShape@@UEBA_NAEBUb2Transform@@AEBUb2Vec2@@@Z
+	?TestPoint@b2CircleShape@@UEBA_NAEBUb2Transform@@AEBUb2Vec2@@@Z
+	?TestPoint@b2EdgeShape@@UEBA_NAEBUb2Transform@@AEBUb2Vec2@@@Z
+	?TestPoint@b2PolygonShape@@UEBA_NAEBUb2Transform@@AEBUb2Vec2@@@Z
+	?TouchProxy@b2BroadPhase@@QEAAXH@Z
+	?UnBufferMove@b2BroadPhase@@AEAAXH@Z
+	?Update@b2Contact@@IEAAXPEAVb2ContactListener@@@Z
+	?Validate@b2DynamicTree@@QEBAXXZ
+	?Validate@b2PolygonShape@@QEBA_NXZ
+	?ValidateMetrics@b2DynamicTree@@AEBAXH@Z
+	?ValidateStructure@b2DynamicTree@@AEBAXH@Z
+	?WarmStart@b2ContactSolver@@QEAAXXZ
+	?b2Alloc@@YAPEAXH@Z
+	?b2ClipSegmentToLine@@YAHQEAUb2ClipVertex@@QEBU1@AEBUb2Vec2@@MH@Z
+	?b2CollideCircles@@YAXPEAUb2Manifold@@PEBVb2CircleShape@@AEBUb2Transform@@12@Z
+	?b2CollideEdgeAndCircle@@YAXPEAUb2Manifold@@PEBVb2EdgeShape@@AEBUb2Transform@@PEBVb2CircleShape@@2@Z
+	?b2CollideEdgeAndPolygon@@YAXPEAUb2Manifold@@PEBVb2EdgeShape@@AEBUb2Transform@@PEBVb2PolygonShape@@2@Z
+	?b2CollidePolygonAndCircle@@YAXPEAUb2Manifold@@PEBVb2PolygonShape@@AEBUb2Transform@@PEBVb2CircleShape@@2@Z
+	?b2CollidePolygons@@YAXPEAUb2Manifold@@PEBVb2PolygonShape@@AEBUb2Transform@@12@Z
+	?b2Distance@@YAXPEAUb2DistanceOutput@@PEAUb2SimplexCache@@PEBUb2DistanceInput@@@Z
+	?b2Free@@YAXPEAX@Z
+	?b2GetPointStates@@YAXQEAW4b2PointState@@0PEBUb2Manifold@@1@Z
+	?b2Log@@YAXPEBDZZ
+	?b2PairLessThan@@YA_NAEBUb2Pair@@0@Z
+	?b2TestOverlap@@YA_NPEBVb2Shape@@H0HAEBUb2Transform@@1@Z
+	?b2TimeOfImpact@@YAXPEAUb2TOIOutput@@PEBUb2TOIInput@@@Z
+	__local_stdio_printf_options

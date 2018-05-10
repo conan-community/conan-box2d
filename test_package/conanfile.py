@@ -5,7 +5,6 @@ import os
 class DocoptTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch", "cppstd"
     generators = "cmake"
-    requires = "excel/1.1.4@igormironchik/stable"
 
     def build(self):
         cmake = CMake(self)

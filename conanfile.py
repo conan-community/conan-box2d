@@ -1,6 +1,7 @@
-from conans import ConanFile, CMake, tools
 import os
-import shutil
+from shutil import copyfile
+from conans import ConanFile, CMake, tools
+
 
 class Box2dConan(ConanFile):
     name = "box2d"
@@ -14,6 +15,7 @@ class Box2dConan(ConanFile):
     default_options = "shared=False"
     generators = "cmake"
     exports = "LICENSE"
+    exports_sources = "exports.def"
 
     @property
     def source_subfolder(self):
@@ -22,8 +24,18 @@ class Box2dConan(ConanFile):
     def source(self):
         tools.get("https://github.com/erincatto/Box2D/archive/v%s.zip" % self.version)
         os.rename("Box2D-%s" % self.version, self.source_subfolder)
+        tools.replace_in_file("%s/Box2D/CMakeLists.txt" % self.source_subfolder,
+                              "project(Box2D)",
+                              """project(Box2D)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()""")
 
     def build(self):
+        if self.settings.os == "Windows" and self.options.shared:
+            tools.replace_in_file("%s/Box2D/Box2D/CMakeLists.txt" % self.source_subfolder,
+                                  "add_library(Box2D_shared SHARED",
+                                  "add_library(Box2D_shared SHARED exports.def")
+            copyfile("exports.def", "%s/Box2D/Box2D/exports.def" % self.source_subfolder)
         cmake = CMake(self)
         cmake.definitions["BOX2D_BUILD_SHARED"] = self.options.shared
         cmake.definitions["BOX2D_BUILD_STATIC"] = not self.options.shared
