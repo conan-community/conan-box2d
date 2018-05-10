@@ -33,8 +33,13 @@ conan_basic_setup()""")
     def build(self):
         if self.settings.os == "Windows" and self.options.shared:
             tools.replace_in_file("%s/Box2D/Box2D/CMakeLists.txt" % self.source_subfolder,
-                                  "add_library(Box2D_shared SHARED",
-                                  "add_library(Box2D_shared SHARED exports.def")
+                                  """${BOX2D_Rope_HDRS}
+	)
+	set_target_properties(Box2D_shared PROPERTIES""",
+                                  """${BOX2D_Rope_HDRS}
+		exports.def
+	)
+	set_target_properties(Box2D_shared PROPERTIES""")
             copyfile("exports.def", "%s/Box2D/Box2D/exports.def" % self.source_subfolder)
         cmake = CMake(self)
         cmake.definitions["BOX2D_BUILD_SHARED"] = self.options.shared
