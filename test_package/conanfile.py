@@ -1,8 +1,8 @@
-from conans import ConanFile, CMake, tools
 import os
+from conans import ConanFile, CMake, tools, RunEnvironment
 
 
-class DocoptTestConan(ConanFile):
+class Box2DTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch", "cppstd"
     generators = "cmake"
 
@@ -16,5 +16,11 @@ class DocoptTestConan(ConanFile):
         self.copy(pattern="*.dylib", src="lib", dst="bin")
 
     def test(self):
-        with tools.chdir("bin"):
-            self.run(".%stest_package" % os.sep)
+        with tools.environment_append(RunEnvironment(self).vars):
+            bin_path = os.path.join("bin", "test_package")
+            if self.settings.os == "Windows":
+                self.run(bin_path)
+            elif self.settings.os == "Macos":
+                self.run("DYLD_LIBRARY_PATH=%s %s" % (os.environ.get('DYLD_LIBRARY_PATH', ''), bin_path))
+            else:
+                self.run("LD_LIBRARY_PATH=%s %s" % (os.environ.get('LD_LIBRARY_PATH', ''), bin_path))
