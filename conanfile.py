@@ -53,7 +53,7 @@ conan_basic_setup()""")
         self.copy("*.h", dst="include/Box2D", src="%s/Box2D/Box2D" % self.source_subfolder)
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.dll", dst="bin", keep_path=False)
-        self.copy("*.so", dst="lib", keep_path=False)
+        self.copy("*.so", dst="lib", keep_path=False, symlinks=True)
         self.copy("*.dylib", dst="lib", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
 
