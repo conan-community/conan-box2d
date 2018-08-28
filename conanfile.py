@@ -1,5 +1,4 @@
 import os
-from shutil import copyfile
 from conans import ConanFile, CMake, tools
 
 
