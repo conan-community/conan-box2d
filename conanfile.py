@@ -11,8 +11,9 @@ class Box2dConan(ConanFile):
     homepage = "http://box2d.org/"
     url = "https://github.com/conan-community/conan-box2d"
     settings = "os", "compiler", "build_type", "arch"
-    options = {"shared": [True, False]}
-    default_options = "shared=False"
+    options = {"shared": [True, False],
+               "fPIC": [True, False]}
+    default_options = "shared=False", "fPIC=True"
     generators = "cmake"
     exports = "LICENSE"
     exports_sources = "exports.def"
@@ -20,6 +21,10 @@ class Box2dConan(ConanFile):
     @property
     def source_subfolder(self):
         return "sources"
+
+    def config_options(self):
+        if self.settings.os == "Windows":
+            del self.options.fPIC
 
     def source(self):
         tools.get("https://github.com/erincatto/Box2D/archive/v%s.zip" % self.version)
