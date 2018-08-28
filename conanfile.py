@@ -58,4 +58,4 @@ conan_basic_setup()""")
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = tools.collect_libs(self)
+        self.cpp_info.libs = ["Box2D"]
