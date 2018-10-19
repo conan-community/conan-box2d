@@ -16,7 +16,7 @@ The packages generated with this *conanfile.py* can be found in [Bintray](https:
 
 ## Project setup
 
-If you handle multiple dependencies in your project is better to add a *conanfile.txt*:
+If you handle multiple dependencies in your project, it's better to add a *conanfile.txt*:
 
     [requires]
     box2d/2.3.1@conan/stable
