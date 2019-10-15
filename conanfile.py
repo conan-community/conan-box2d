@@ -4,7 +4,7 @@ from conans import ConanFile, CMake, tools
 
 class Box2dConan(ConanFile):
     name = "box2d"
-    version = "2.3.1"
+    version = "master"
     license = "Zlib"
     description = "Box2D is a 2D physics engine for games"
     homepage = "http://box2d.org/"
@@ -26,7 +26,7 @@ class Box2dConan(ConanFile):
             del self.options.fPIC
 
     def source(self):
-        tools.get("https://github.com/erincatto/Box2D/archive/v%s.zip" % self.version)
+        tools.get("https://github.com/erincatto/Box2D/archive/%s.zip" % self.version)
         os.rename("Box2D-%s" % self.version, self.source_subfolder)
 
     def build(self):
@@ -35,15 +35,17 @@ class Box2dConan(ConanFile):
         cmake.definitions["BOX2D_BUILD_STATIC"] = not self.options.shared
         if self.settings.os == "Windows" and self.options.shared:
             cmake.definitions["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = True
-        cmake.definitions["BOX2D_BUILD_EXAMPLES"] = False
+        cmake.definitions["BOX2D_INSTALL"] = True
         cmake.configure()
         cmake.build()
 
     def package(self):
-        self.copy("License.txt", dst="licenses", src="%s/Box2D" % self.source_subfolder)
-        self.copy("*.h", dst="include/Box2D", src="%s/Box2D/Box2D" % self.source_subfolder)
-        self.copy("*.lib", dst="lib", keep_path=False)
-        self.copy("*.dll", dst="bin", keep_path=False)
+        self.copy("LICENSE", dst="licenses", src="%s" % self.source_subfolder)
+        self.copy("*", dst="include/Box2D", src="include/Box2D")
+        self.copy("*.lib", dst="lib", src="lib", keep_path=False)
+        self.copy("*.pdb", dst="lib", src="lib", keep_path=False)
+        self.copy("*.dll", dst="bin", src="bin", keep_path=False)
+        self.copy("*.pdb", dst="bin", src="bin", keep_path=False)
         self.copy("*.so*", dst="lib", keep_path=False, symlinks=True)
         self.copy("*.dylib", dst="lib", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
