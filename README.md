@@ -19,14 +19,14 @@ If you wish to report an issue or make a request for a package, please do so her
 
 ### Basic setup
 
-    $ conan install box2d/2.3.1@conan/stable
+    $ conan install box2d/2.3.2.ef96a4f@conan/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    box2d/2.3.1@conan/stable
+    box2d/2.3.2.ef96a4f@conan/stable
 
     [generators]
     cmake
